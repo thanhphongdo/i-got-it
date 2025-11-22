@@ -5,7 +5,7 @@ import img4 from "./images/img-04.jpg";
 import img5 from "./images/img-05.jpg";
 import TsxCodeViewer from "../../shared/TsxCodeViewer";
 import { useCallbackCode } from "./codes/use-callback-code";
-import { memo, useCallback, useState } from "react";
+import { memo, useCallback, useId, useState } from "react";
 import { Collapse } from "../../shared/Collapse";
 import { ImageViewer } from "../../shared/ImageViewer";
 

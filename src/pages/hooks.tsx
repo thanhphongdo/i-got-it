@@ -5,6 +5,7 @@ import { UseContext } from "../components/hooks-page/use-context/use-context";
 import { UseDeferredValue } from "../components/hooks-page/use-deferred-value/use-deferred-value";
 import { UseEffect } from "../components/hooks-page/use-effect/use-effect";
 import { UseEffectEvent } from "../components/hooks-page/use-effect-event/use-effect-event";
+import { UseId } from "../components/hooks-page/use-id/use-id";
 
 export function Hooks() {
   const [keyword, setKeyword] = useState("");
@@ -32,6 +33,10 @@ export function Hooks() {
     {
       name: "useEffectEvent",
       component: UseEffectEvent,
+    },
+    {
+      name: "useId",
+      component: UseId,
     },
   ];
   return (
