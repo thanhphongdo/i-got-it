@@ -1,8 +1,8 @@
-import useCallbackImage1 from "./images/use-callback-1.jpg";
-import useCallbackImage2 from "./images/use-callback-2.jpg";
-import useCallbackImage3 from "./images/use-callback-3.jpg";
-import useCallbackImage4 from "./images/use-callback-4.jpg";
-import useCallbackImage5 from "./images/use-callback-5.jpg";
+import img1 from "./images/img-01.jpg";
+import img2 from "./images/img-02.jpg";
+import img3 from "./images/img-03.jpg";
+import img4 from "./images/img-04.jpg";
+import img5 from "./images/img-05.jpg";
 import TsxCodeViewer from "../../shared/TsxCodeViewer";
 import { useCallbackCode } from "./codes/use-callback-code";
 import { memo, useCallback, useState } from "react";
@@ -109,15 +109,7 @@ export function UseCallback() {
     <div className="flex flex-col gap-4 items-start">
       <h3 className="underline font-bold w-full">Explain:</h3>
       <Collapse>
-        <ImageViewer
-          images={[
-            useCallbackImage1,
-            useCallbackImage2,
-            useCallbackImage3,
-            useCallbackImage4,
-            useCallbackImage5,
-          ]}
-        />
+        <ImageViewer images={[img1, img2, img3, img4, img5]} />
       </Collapse>
       <h3 className="underline font-bold w-full">Example:</h3>
       <Collapse>
