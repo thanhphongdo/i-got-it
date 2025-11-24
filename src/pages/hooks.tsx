@@ -6,6 +6,9 @@ import { UseDeferredValue } from "../components/hooks-page/use-deferred-value/us
 import { UseEffect } from "../components/hooks-page/use-effect/use-effect";
 import { UseEffectEvent } from "../components/hooks-page/use-effect-event/use-effect-event";
 import { UseId } from "../components/hooks-page/use-id/use-id";
+import { UseImperativeHandle } from "../components/hooks-page/use-imperative-handle/use-imperative-handle";
+import { UseLayoutEffect } from "../components/hooks-page/use-layout-effect/use-layout-effect";
+import { UseOptimistic } from "../components/hooks-page/use-optimistic/use-optimistic";
 
 export function Hooks() {
   const [keyword, setKeyword] = useState("");
@@ -37,6 +40,18 @@ export function Hooks() {
     {
       name: "useId",
       component: UseId,
+    },
+    {
+      name: "useImperativeHandle",
+      component: UseImperativeHandle,
+    },
+    {
+      name: "useLayoutEffect",
+      component: UseLayoutEffect,
+    },
+    {
+      name: "useOptimistic",
+      component: UseOptimistic,
     },
   ];
   return (
