@@ -27,6 +27,12 @@ import q6img3 from "./q6/img-03.jpg";
 import q7img1 from "./q7/img-01.jpg";
 import q7img2 from "./q7/img-02.jpg";
 
+import q8img1 from "./q8/img-01.jpg";
+
+import q9img1 from "./q9/img-01.jpg";
+
+import q10img1 from "./q10/img-01.jpg";
+
 export const JS = [
   {
     question: "JS Scope",
@@ -62,5 +68,20 @@ export const JS = [
     question: "Giải thích event loop, microtask và macrotask",
     chatgpt: "https://chatgpt.com/c/69255db5-f9d4-8323-a108-2ff4273ba821",
     answers: [q7img1, q7img2],
+  },
+  {
+    question: "destructuring, spread, rest, arrow function, class",
+    chatgpt: "https://chatgpt.com/c/692536ad-e1b0-832f-9577-58f119c8b3f1",
+    answers: [q8img1],
+  },
+  {
+    question: "Sự khác nhau debounce và throttle",
+    chatgpt: "https://chatgpt.com/c/692536ad-e1b0-832f-9577-58f119c8b3f1",
+    answers: [q9img1],
+  },
+  {
+    question: "Explain shallow copy vs deep copy",
+    chatgpt: "https://chatgpt.com/c/692536ad-e1b0-832f-9577-58f119c8b3f1",
+    answers: [q10img1],
   },
 ];
