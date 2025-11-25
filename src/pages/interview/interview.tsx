@@ -29,7 +29,10 @@ export function Interview() {
               <h2 className="text-2xl font-bold underline text-indigo-300">
                 {group.name}
               </h2>
-              <Collapse key={group.name} placeholder="Click to expand Group">
+              <Collapse
+                key={group.name}
+                placeholder={`${group.questions.length ? "Click to expand Group" : "No Questions in this Group"}`}
+              >
                 {group.questions
                   .map((item, index) => ({
                     ...item,

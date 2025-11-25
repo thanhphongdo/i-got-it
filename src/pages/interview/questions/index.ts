@@ -6,6 +6,8 @@ import { API } from "./data/api";
 import { Optimize } from "./data/optimize";
 import { Security } from "./data/security";
 import { SQL } from "./data/sql";
+import { NoSQL } from "./data/no-sql";
+import { StateManagement } from "./data/state-management";
 
 export const questionGroups = [
   {
@@ -37,7 +39,75 @@ export const questionGroups = [
     questions: SQL,
   },
   {
+    name: "NoSQL",
+    questions: NoSQL,
+  },
+  {
+    name: "State Management",
+    questions: StateManagement,
+  },
+  {
+    name: "Unit Testing & E2E Testing",
+    questions: [],
+  },
+  {
+    name: "Event Bus & Message Queue",
+    questions: [],
+  },
+  {
+    name: "Micro Services",
+    questions: [],
+  },
+  {
+    name: "Micro Frontends",
+    questions: [],
+  },
+  {
+    name: "Design Patterns",
+    questions: [],
+  },
+  {
+    name: "OOP",
+    questions: [],
+  },
+  {
+    name: "Clean Architecture",
+    questions: [],
+  },
+  {
+    name: "Domain-Driven Design",
+    questions: [],
+  },
+  {
+    name: "NestJS",
+    questions: [],
+  },
+  {
+    name: "GraphQL",
+    questions: [],
+  },
+  {
     name: "React JS",
     questions: React,
+  },
+  {
+    name: "Next JS",
+    questions: [],
+  },
+  {
+    name: "Vue JS",
+    questions: [],
+  },
+  {
+    name: "Nuxt JS",
+    questions: [],
+  },
+  {
+    name: "Angular",
+    questions: [],
+  },
+  {
+    name: "Others",
+    questions: [],
   },
 ];
