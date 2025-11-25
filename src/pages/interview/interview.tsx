@@ -13,7 +13,7 @@ export function Interview() {
             Interview Question
           </h1>
           <input
-            className="px-4 py-2 border rounded-md"
+            className="px-4 py-2 border rounded-md bg-gray-700 text-white"
             type="text"
             placeholder="Search..."
             value={keyword}

@@ -10,7 +10,7 @@ export function Collapse({
   return (
     <div className="relative w-full min-h-8">
       <div
-        className="w-6 h-6 p-1 absolute right-0 top-0 flex justify-center items-center border border-gray-500 bg-gray-300 rounded-md cursor-pointer z-[50] select-none"
+        className="w-8 h-8 p-1 absolute right-0 top-0 flex justify-center items-center border border-gray-500 bg-gray-300 rounded-md cursor-pointer z-[50] select-none"
         onClick={() => setOpened(!opened)}
       >
         <img src={opened ? chevronUp : chevronDown} className="w-full" alt="" />

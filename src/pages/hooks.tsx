@@ -70,7 +70,7 @@ export function Hooks() {
         <div className="flex flex-col lg:flex-row gap-4">
           <h1 className="text-3xl font-bold underline flex-1">Learn Hooks</h1>
           <input
-            className="px-4 py-2 border rounded-md"
+            className="px-4 py-2 border rounded-md bg-gray-700 text-white"
             type="text"
             placeholder="Search..."
             value={keyword}

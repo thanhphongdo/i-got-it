@@ -5,6 +5,7 @@ import { TS } from "./data/ts";
 import { API } from "./data/api";
 import { Optimize } from "./data/optimize";
 import { Security } from "./data/security";
+import { SQL } from "./data/sql";
 
 export const questionGroups = [
   {
@@ -30,6 +31,10 @@ export const questionGroups = [
   {
     name: "Security",
     questions: Security,
+  },
+  {
+    name: "SQL",
+    questions: SQL,
   },
   {
     name: "React JS",
