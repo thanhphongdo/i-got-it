@@ -4,6 +4,7 @@ import { CSS } from "./data/css";
 import { TS } from "./data/ts";
 import { API } from "./data/api";
 import { Optimize } from "./data/optimize";
+import { Security } from "./data/security";
 
 export const questionGroups = [
   {
@@ -25,6 +26,10 @@ export const questionGroups = [
   {
     name: "Web Performance Optimization",
     questions: Optimize,
+  },
+  {
+    name: "Security",
+    questions: Security,
   },
   {
     name: "React JS",
