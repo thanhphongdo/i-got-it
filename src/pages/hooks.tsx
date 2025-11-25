@@ -9,6 +9,8 @@ import { UseId } from "../components/hooks-page/use-id/use-id";
 import { UseImperativeHandle } from "../components/hooks-page/use-imperative-handle/use-imperative-handle";
 import { UseLayoutEffect } from "../components/hooks-page/use-layout-effect/use-layout-effect";
 import { UseOptimistic } from "../components/hooks-page/use-optimistic/use-optimistic";
+import { UseReducer } from "../components/hooks-page/use-reducer/use-reducer";
+import { UseSyncExternalStore } from "../components/hooks-page/use-sync-external-store/use-sync-external-store";
 
 export function Hooks() {
   const [keyword, setKeyword] = useState("");
@@ -52,6 +54,14 @@ export function Hooks() {
     {
       name: "useOptimistic",
       component: UseOptimistic,
+    },
+    {
+      name: "useReducer",
+      component: UseReducer,
+    },
+    {
+      name: "useSyncExternalStore",
+      component: UseSyncExternalStore,
     },
   ];
   return (
