@@ -22,7 +22,10 @@ export function Interview() {
         </div>
         {questionGroups.map((group) => {
           return (
-            <div className="flex gap-4 flex-col" key={group.name}>
+            <div
+              className="flex gap-4 flex-col p-4 border border-gray-400 rounded-md"
+              key={group.name}
+            >
               <h2 className="text-2xl font-bold underline text-indigo-300">
                 {group.name}
               </h2>

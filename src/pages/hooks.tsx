@@ -83,7 +83,10 @@ export function Hooks() {
           )
           .map((hook) => {
             return (
-              <div key={hook.name} className="p-4 bg-gray-200 rounded-md">
+              <div
+                key={hook.name}
+                className="p-4 border border-gray-400 rounded-md"
+              >
                 <div>
                   <h2 className="text-2xl font-bold underline">{hook.name}</h2>
                   <hook.component />
