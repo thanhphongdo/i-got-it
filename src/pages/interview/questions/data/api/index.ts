@@ -3,15 +3,15 @@ import apiImg02 from "./api/img-02.jpg";
 import apiImg03 from "./api/img-03.jpg";
 import apiImg04 from "./api/img-04.jpg";
 
-import wsImg01 from ".//websocket/img-01.jpg";
-import wsImg02 from ".//websocket/img-02.jpg";
-import wsImg03 from ".//websocket/img-03.jpg";
-import wsImg04 from ".//websocket/img-04.jpg";
-import wsImg05 from ".//websocket/img-05.jpg";
-import wsImg06 from ".//websocket/img-06.jpg";
-import wsImg07 from ".//websocket/img-07.jpg";
-import wsImg08 from ".//websocket/img-08.jpg";
-import wsImg09 from ".//websocket/img-09.jpg";
+import wsImg01 from "./websocket/img-01.jpg";
+import wsImg02 from "./websocket/img-02.jpg";
+import wsImg03 from "./websocket/img-03.jpg";
+import wsImg04 from "./websocket/img-04.jpg";
+import wsImg05 from "./websocket/img-05.jpg";
+import wsImg06 from "./websocket/img-06.jpg";
+import wsImg07 from "./websocket/img-07.jpg";
+import wsImg08 from "./websocket/img-08.jpg";
+import wsImg09 from "./websocket/img-09.jpg";
 
 export const API = [
   {
