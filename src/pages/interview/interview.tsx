@@ -26,12 +26,14 @@ export function Interview() {
               className="flex gap-4 flex-col p-4 border border-gray-400 rounded-md"
               key={group.name}
             >
-              <h2 className="text-2xl font-bold underline text-indigo-300">
-                {group.name}
-              </h2>
               <Collapse
                 key={group.name}
                 placeholder={`${group.questions.length ? "Click to expand Group" : "No Questions in this Group"}`}
+                title={
+                  <h2 className="text-2xl font-bold underline text-indigo-300 mb-4">
+                    {group.name}
+                  </h2>
+                }
               >
                 <div className="flex flex-col gap-4">
                   {group.questions

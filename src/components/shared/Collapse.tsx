@@ -1,19 +1,31 @@
-import { PropsWithChildren, useState } from "react";
+import React, { PropsWithChildren, useState } from "react";
 import chevronUp from "../../assets/images/chevron-up.svg";
 import chevronDown from "../../assets/images/chevron-down.svg";
 
 export function Collapse({
   children,
   placeholder,
-}: PropsWithChildren & { placeholder?: string }) {
+  title,
+}: PropsWithChildren & { placeholder?: string; title?: React.ReactNode }) {
   const [opened, setOpened] = useState(false);
   return (
     <div className="relative w-full min-h-8">
-      <div
-        className="w-8 h-8 p-1 absolute right-2 top-2 flex justify-center items-center border border-gray-500 bg-gray-300 rounded-md cursor-pointer z-[50] select-none"
-        onClick={() => setOpened(!opened)}
-      >
-        <img src={opened ? chevronUp : chevronDown} className="w-full" alt="" />
+      <div className="flex gap-4">
+        <div className="flex-1 flex">
+          <div className="cursor-pointer" onClick={() => setOpened(!opened)}>
+            {title}
+          </div>
+        </div>
+        <div
+          className="w-8 h-8 p-1 absolute right-2 top-2 flex justify-center items-center border border-gray-500 bg-gray-300 rounded-md cursor-pointer z-[50] select-none"
+          onClick={() => setOpened(!opened)}
+        >
+          <img
+            src={opened ? chevronUp : chevronDown}
+            className="w-full"
+            alt=""
+          />
+        </div>
       </div>
       <div className={`w-full text-center ${opened ? "hidden" : "block"}`}>
         <span

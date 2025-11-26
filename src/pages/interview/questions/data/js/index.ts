@@ -36,6 +36,8 @@ import q6img7 from "./q6/img-07.jpg";
 
 import q7img1 from "./q7/img-01.jpg";
 import q7img2 from "./q7/img-02.jpg";
+import q7img3 from "./q7/img-03.jpg";
+import q7img4 from "./q7/img-04.jpg";
 
 import q8img1 from "./q8/img-01.jpg";
 
@@ -93,7 +95,7 @@ export const JS = [
   {
     question: "Giải thích event loop, microtask và macrotask",
     chatgpt: "https://chatgpt.com/c/69255db5-f9d4-8323-a108-2ff4273ba821",
-    answers: [q7img1, q7img2],
+    answers: [q7img1, q7img2, q7img3, q7img4],
   },
   {
     question: "destructuring, spread, rest, arrow function, class",
