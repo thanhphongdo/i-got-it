@@ -3,7 +3,7 @@ import { questionGroups } from "./questions";
 import { Collapse } from "../../components/shared/Collapse";
 import { Question } from "../../components/shared/Question";
 
-export function Interview() {
+export default function Interview() {
   const [keyword, setKeyword] = useState("");
   return (
     <>

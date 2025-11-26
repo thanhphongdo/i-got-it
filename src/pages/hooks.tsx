@@ -12,7 +12,7 @@ import { UseOptimistic } from "../components/hooks-page/use-optimistic/use-optim
 import { UseReducer } from "../components/hooks-page/use-reducer/use-reducer";
 import { UseSyncExternalStore } from "../components/hooks-page/use-sync-external-store/use-sync-external-store";
 
-export function Hooks() {
+export default function Hooks() {
   const [keyword, setKeyword] = useState("");
   const hooks = [
     {

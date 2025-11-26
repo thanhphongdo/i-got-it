@@ -1,17 +1,28 @@
 import { createBrowserRouter } from "react-router";
-import { Hooks } from "./pages/hooks";
-import { Interview } from "./pages/interview/interview";
+import React, { lazy, Suspense } from "react";
+
+const Hooks = lazy(() => import("./pages/hooks"));
+const Interview = lazy(() => import("./pages/interview/interview"));
+
 export const routes = createBrowserRouter([
   {
     path: "/",
     children: [
       {
         path: "hooks",
-        element: <Hooks />,
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Hooks />
+          </Suspense>
+        ),
       },
       {
         path: "interview",
-        element: <Interview />,
+        element: (
+          <Suspense fallback={<div>Loading...</div>}>
+            <Interview />
+          </Suspense>
+        ),
       },
     ],
   },
