@@ -11,13 +11,15 @@ export function Question({
   chatgpt?: string;
 }) {
   return (
-    <div className="flex flex-col gap-4 items-start">
-      <h3 className="underline font-bold w-full text-red-300">{question}</h3>
+    <div className="flex flex-col gap-4 items-start border border-gray-400 bg-gray-900/30 p-4 rounded-md">
+      <h3 className="underline font-bold w-full text-green-200 text-2xl">
+        {question}
+      </h3>
       <a
         href={chatgpt}
         target="_blank"
         rel="noreferrer"
-        className="underline italic"
+        className="underline italic text-xs"
       >
         {chatgpt}
       </a>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import { questionGroups } from "./questions";
 import { Collapse } from "../../components/shared/Collapse";
 import { Question } from "../../components/shared/Question";
@@ -33,26 +33,32 @@ export function Interview() {
                 key={group.name}
                 placeholder={`${group.questions.length ? "Click to expand Group" : "No Questions in this Group"}`}
               >
-                {group.questions
-                  .map((item, index) => ({
-                    ...item,
-                    question: `Q${index + 1}: ${item.question}`,
-                  }))
-                  .filter((question) =>
-                    question.question
-                      .toLowerCase()
-                      .includes(keyword.toLowerCase())
-                  )
-                  .map((question) => {
-                    return (
-                      <Question
-                        key={question.question}
-                        question={question.question}
-                        answers={question.answers}
-                        chatgpt={question.chatgpt}
-                      />
-                    );
-                  })}
+                <div className="flex flex-col gap-4">
+                  {group.questions
+                    .map((item, index) => ({
+                      ...item,
+                      question: `Q${index + 1}: ${item.question}`,
+                    }))
+                    .filter((question) =>
+                      question.question
+                        .toLowerCase()
+                        .includes(keyword.toLowerCase())
+                    )
+                    .map((question) => {
+                      return (
+                        <Fragment key={question.question}>
+                          <Question
+                            question={question.question}
+                            answers={question.answers}
+                            chatgpt={question.chatgpt}
+                          />
+                          {/* {qIndex < group.questions.length - 1 && (
+                            <div className="w-1/2 h-[2px] bg-gray-400 self-center"></div>
+                          )} */}
+                        </Fragment>
+                      );
+                    })}
+                </div>
               </Collapse>
             </div>
           );

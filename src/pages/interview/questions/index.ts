@@ -11,11 +11,11 @@ import { StateManagement } from "./data/state-management";
 
 export const questionGroups = [
   {
-    name: "Basic JS",
+    name: "Basic Javascript",
     questions: JS,
   },
   {
-    name: "Basic TS",
+    name: "Basic Typescript",
     questions: TS,
   },
   {
