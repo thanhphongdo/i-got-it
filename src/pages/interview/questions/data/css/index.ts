@@ -13,6 +13,17 @@ import positionimg04 from "./q-position/img-04.jpg";
 import positionimg05 from "./q-position/img-05.jpg";
 import positionimg06 from "./q-position/img-06.jpg";
 
+import sassimg01 from "./q-sass/img-01.jpg";
+import sassimg02 from "./q-sass/img-02.jpg";
+import sassimg03 from "./q-sass/img-03.jpg";
+import sassimg04 from "./q-sass/img-04.jpg";
+import sassimg05 from "./q-sass/img-05.jpg";
+import sassimg06 from "./q-sass/img-06.jpg";
+import sassimg07 from "./q-sass/img-07.jpg";
+import sassimg08 from "./q-sass/img-08.jpg";
+import sassimg09 from "./q-sass/img-09.jpg";
+import sassimg10 from "./q-sass/img-10.jpg";
+
 export const CSS = [
   {
     question: "Flex Layout",
@@ -60,6 +71,22 @@ export const CSS = [
       positionimg04,
       positionimg05,
       positionimg06,
+    ],
+  },
+  {
+    question: "SASS/SCSS",
+    chatgpt: "https://chatgpt.com/c/69268f53-3d74-8323-8abc-c9a79a32e905",
+    answers: [
+      sassimg01,
+      sassimg02,
+      sassimg03,
+      sassimg04,
+      sassimg05,
+      sassimg06,
+      sassimg07,
+      sassimg08,
+      sassimg09,
+      sassimg10,
     ],
   },
 ];
