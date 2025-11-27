@@ -38,7 +38,7 @@ export const API = [
   },
   {
     question: "API Flow: Từ client đến server, qua các bước nào?",
-    chatgpt: "https://chatgpt.com/c/69259def-4d70-8321-9a0f-591e514139e0",
+    chatgpt: "https://chatgpt.com/c/6927b32b-d844-8331-ab90-86d5aa38fd03",
     answers: [flowImg01, flowImg02, flowImg03, flowImg04, flowImg05],
   },
 ];

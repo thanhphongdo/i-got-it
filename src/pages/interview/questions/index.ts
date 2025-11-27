@@ -8,6 +8,7 @@ import { Security } from "./data/security";
 import { SQL } from "./data/sql";
 import { NoSQL } from "./data/no-sql";
 import { StateManagement } from "./data/state-management";
+import { UT } from "./data/unit-test";
 
 export const questionGroups = [
   {
@@ -48,7 +49,7 @@ export const questionGroups = [
   },
   {
     name: "Unit Testing & E2E Testing",
-    questions: [],
+    questions: UT,
   },
   {
     name: "Event Bus & Message Queue",
