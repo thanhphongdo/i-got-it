@@ -13,6 +13,12 @@ import wsImg07 from "./websocket/img-07.jpg";
 import wsImg08 from "./websocket/img-08.jpg";
 import wsImg09 from "./websocket/img-09.jpg";
 
+import flowImg01 from "./api-flow/img-01.jpg";
+import flowImg02 from "./api-flow/img-02.jpg";
+import flowImg03 from "./api-flow/img-03.jpg";
+import flowImg04 from "./api-flow/img-04.jpg";
+import flowImg05 from "./api-flow/img-05.jpg";
+
 export const API = [
   {
     question: "Restful API",
@@ -29,5 +35,10 @@ export const API = [
       "Websocket best practices and solutions: SharedWorker, Adapter Polling",
     chatgpt: "https://chatgpt.com/c/69259def-4d70-8321-9a0f-591e514139e0",
     answers: [wsImg04, wsImg05, wsImg06, wsImg07, wsImg08, wsImg09],
+  },
+  {
+    question: "API Flow: Từ client đến server, qua các bước nào?",
+    chatgpt: "https://chatgpt.com/c/69259def-4d70-8321-9a0f-591e514139e0",
+    answers: [flowImg01, flowImg02, flowImg03, flowImg04, flowImg05],
   },
 ];

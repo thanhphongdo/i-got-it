@@ -14,6 +14,13 @@ import img13 from "./q1-15/img-13.jpg";
 import img14 from "./q1-15/img-14.jpg";
 import img15 from "./q1-15/img-15.jpg";
 
+import oopImg01 from "./q-oop-patterns/img-01.jpg";
+import oopImg02 from "./q-oop-patterns/img-02.jpg";
+import oopImg03 from "./q-oop-patterns/img-03.jpg";
+import oopImg04 from "./q-oop-patterns/img-04.jpg";
+import oopImg05 from "./q-oop-patterns/img-05.jpg";
+import oopImg06 from "./q-oop-patterns/img-06.jpg";
+
 export const TS = [
   {
     question: "Sự khác nhau giữa unknown và any?",
@@ -89,5 +96,10 @@ export const TS = [
     question: "Type Narrowing là gì? Hoạt động thế nào?",
     chatgpt: "https://chatgpt.com/c/692567c0-2d0c-832e-8a1f-3f05faca55a1",
     answers: [img15],
+  },
+  {
+    question: "Design Patterns trong OOP thường dùng trong TypeScript?",
+    chatgpt: "https://chatgpt.com/c/6927af8a-0a84-8323-a660-3b9102760580",
+    answers: [oopImg01, oopImg02, oopImg03, oopImg04, oopImg05, oopImg06],
   },
 ];
